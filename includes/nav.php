@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <h1>MJT</h1>
+            <h1>HPA</h1>
         </div>
         <nav>
             <div class="menu-toggle">

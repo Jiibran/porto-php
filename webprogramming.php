@@ -1,17 +1,32 @@
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/nav.php'; ?>
 
-<section class="web-programming">
+<section class="webprog-hero">
     <div class="container">
-        <h1 class="section-title">Pemrograman Web</h1>
+        <div class="webprog-header">
+            <h1>Pemrograman Web</h1>
+            <p class="webprog-subtitle">Materi dasar untuk memulai di dunia pengembangan web</p>
+        </div>
+    </div>
+</section>
+
+<section class="webprog-content">
+    <div class="container">
         <p class="section-desc">Berikut adalah materi dari pertemuan 1 sampai 6 tentang pemrograman web.</p>
         
         <div class="accordion">
             <!-- HTML Section -->
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Pertemuan 1: HTML</h3>
-                    <i class="fas fa-plus"></i>
+                    <div class="accordion-title">
+                        <div class="accordion-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Pertemuan 1: HTML</h3>
+                    </div>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
                 </div>
                 <div class="accordion-content">
                     <div class="code-example">

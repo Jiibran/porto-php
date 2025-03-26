@@ -5,77 +5,121 @@
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Muhammad Jibran Tariq</h1>
+                <span class="hero-intro">Hello, I'm</span>
+                <h1>Haidar Putra Atmajaya</h1>
                 <h2>Informatika Student</h2>
-                <p>Welcome to my personal website! I'm a student at Universitas Singaperbangsa Karawang passionate about web development.</p>
-                <a href="about.php" class="btn">Learn More</a>
+                <p>Welcome to my personal website! I'm a student at Universitas Singaperbangsa Karawang passionate about mobile development and data analysis.</p>
+                <div class="hero-actions">
+                    <a href="about.php" class="btn btn-primary">About Me</a>
+                    <a href="contact.php" class="btn btn-outline">Get In Touch</a>
+                </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image-container">
+                <div class="hero-background"></div>
                 <div class="profile-img">
-                    <!-- Updated profile image path -->
-                    <img src="assets/images/profil.jpg" alt="Muhammad Jibran Tariq">
+                    <img src="assets/images/profil.jpg" alt="Haidar Putra Atmajaya">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="skills">
+<section class="skills-section">
     <div class="container">
-        <h2 class="section-title">My Skills</h2>
+        <div class="section-header">
+            <h2 class="section-title">My Expertise</h2>
+            <p class="section-subtitle">The skills and technologies I specialize in</p>
+        </div>
         <div class="skills-container">
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, PHP</p>
+            <div class="skill-card featured">
+                <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="skill-content">
+                    <h3>Mobile Development</h3>
+                    <p>Android, Kotlin, Flutter, React Native</p>
+                </div>
+            </div>
+            <div class="skill-column">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Data Analysis</h3>
+                        <p>Python, Tableau, SQL, Data Visualization</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Cloud Computing</h3>
+                        <p>AWS, Google Cloud, Azure</p>
+                    </div>
+                </div>
             </div>
             <div class="skill-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Responsive Design</h3>
-                <p>Building mobile-friendly websites</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Database Management</h3>
-                <p>MySQL, SQL Server</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>UI/UX Design</h3>
-                <p>Creating engaging user interfaces</p>
+                <div class="skill-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="skill-content">
+                    <h3>UI/UX Research</h3>
+                    <p>User Testing, Prototyping, Figma</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="experience">
+<section class="experience-section">
     <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Student Web Developer</h3>
-                    <p class="timeline-date">2023 - Present</p>
-                    <p>Working on various web projects as part of university coursework.</p>
+        <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey so far</p>
+        </div>
+        <div class="experience-cards">
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-date">2023 - Present</div>
+                    <h3>Mobile App Developer</h3>
+                    <p>Developing mobile applications for Android and iOS platforms as part of university projects.</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Web Design Intern</h3>
-                    <p class="timeline-date">2023</p>
-                    <p>Assisted in designing responsive websites for small businesses.</p>
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-date">2023</div>
+                    <h3>Data Analyst Intern</h3>
+                    <p>Analyzed business data and created visualizations to support decision-making processes.</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Freelance Developer</h3>
-                    <p class="timeline-date">2022 - 2023</p>
-                    <p>Created personal websites for clients.</p>
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-date">2022 - 2023</div>
+                    <h3>IT Support Volunteer</h3>
+                    <p>Provided technical support for campus events and helped manage digital infrastructure.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Interested in working together?</h2>
+            <p>Let's build something amazing together. Reach out and let's discuss your project.</p>
+            <a href="contact.php" class="btn btn-accent">Contact Me</a>
         </div>
     </div>
 </section>

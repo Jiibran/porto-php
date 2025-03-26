@@ -2,16 +2,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Muhammad Jibran Tariq</h3>
+                    <h3>Haidar Putra Atmajaya</h3>
                     <p>Informatika - Universitas Singaperbangsa Karawang</p>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/Jiibran" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mjibrantariq/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://id.linkedin.com/in/haidar-putra-atmajaya-377270297" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; <?php echo date("Y"); ?> Muhammad Jibran Tariq. All rights reserved.</p>
+                <p>&copy; <?php echo date("Y"); ?> Haidar Putra Atmajaya. All rights reserved.</p>
             </div>
         </div>
     </footer>

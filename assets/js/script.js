@@ -69,45 +69,77 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Accordion functionality for web programming page
+    // Enhanced accordion functionality for web programming page
     const accordionItems = document.querySelectorAll('.accordion-item');
     if (accordionItems.length > 0) {
         accordionItems.forEach(item => {
             const header = item.querySelector('.accordion-header');
+            const content = item.querySelector('.accordion-content');
+            const icon = item.querySelector('.accordion-toggle i');
+            
+            // Set initial height for transition
+            content.style.maxHeight = '0';
+            
             header.addEventListener('click', () => {
+                // Toggle active class
                 item.classList.toggle('active');
+                
+                // Toggle icon
+                if (item.classList.contains('active')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                    content.style.maxHeight = '0';
+                }
             });
         });
         
         // Open the first accordion by default
-        accordionItems[0].classList.add('active');
+        const firstItem = accordionItems[0];
+        firstItem.classList.add('active');
+        const firstIcon = firstItem.querySelector('.accordion-toggle i');
+        const firstContent = firstItem.querySelector('.accordion-content');
+        
+        firstIcon.classList.remove('fa-plus');
+        firstIcon.classList.add('fa-minus');
+        firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
     }
     
-    // Add animation to elements when they come into view
+    // Advanced scroll animations
+    const animateElements = document.querySelectorAll('.skill-card, .experience-card, .education-card, .interest-item, .contact-card');
+    
     const animateOnScroll = () => {
-        const elements = document.querySelectorAll('.skill-card, .timeline-item, .education-item, .interest-item');
+        const triggerBottom = window.innerHeight * 0.8;
         
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.2;
+        animateElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
             
-            if (elementPosition < screenPosition) {
-                element.style.opacity = 1;
-                element.style.transform = 'translateY(0)';
+            if (elementTop < triggerBottom) {
+                element.classList.add('appear');
             }
         });
     };
     
-    // Set initial state for scroll animation elements
-    const scrollElements = document.querySelectorAll('.skill-card, .timeline-item, .education-item, .interest-item');
-    scrollElements.forEach(element => {
-        element.style.opacity = 0;
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'all 0.5s ease-out';
+    // Add appear class for CSS animations
+    animateElements.forEach(element => {
+        element.classList.add('animate-item');
     });
     
     // Run animation on scroll
     window.addEventListener('scroll', animateOnScroll);
+    
     // Run once on page load
     animateOnScroll();
+    
+    // Add parallax effect to hero section
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.pageYOffset;
+            heroSection.style.backgroundPosition = `50% ${scrollPosition * 0.4}px`;
+        });
+    }
 });
